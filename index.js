@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 9000;
+const port = process.env.PORT || 9000;
 app.get('/', (req, res) => {
     res.send('<h1>Hello World from Docker and Node.js!</h1>');
 });
