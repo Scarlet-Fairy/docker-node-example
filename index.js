@@ -7,7 +7,6 @@ const port = process.env.PORT || 9000;
 const msg = process.env.MSG || "Hello World from Docker and Node.js!";
 app.use(morgan("common"));
 
-console.log(process.env);
 app.get("/", (req, res) => {
   res.send(`<h1>${msg} </h1>`);
 });
